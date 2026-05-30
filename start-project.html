@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Your Project - 3D Home Designer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" style="display:flex; align-items:center; gap:12px;">
+                    <img src="images/logo.png" alt="3D Home Designer Logo" class="custom-logo">
+                    <div class="logo-text">
+                        <span class="logo-title">3D HOME</span>
+                        <span class="logo-subtitle">DESIGNER</span>
+                    </div>
+                </a>
+            </div>
+            
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="page-section">
+        <div class="container project-container">
+            
+            <!-- Left Info Section -->
+            <div class="project-info animate-on-scroll fade-in">
+                <h1 class="page-title">LET'S BUILD YOUR <span class="gold-text">DREAM HOME</span></h1>
+                <p class="page-subtitle">Provide us with the details of your land and requirements, and our expert architects will get back to you with the perfect spatial plan.</p>
+                
+                <div class="trust-points">
+                    <div class="trust-point">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                        <div>
+                            <h4>100% Custom Designs</h4>
+                            <p>Tailored strictly to your lifestyle and land dimensions.</p>
+                        </div>
+                    </div>
+                    <div class="trust-point">
+                        <i class="fa-solid fa-compass"></i>
+                        <div>
+                            <h4>Vastu Compliant</h4>
+                            <p>Architectural planning optimized for positive energy flow.</p>
+                        </div>
+                    </div>
+                    <div class="trust-point">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <div>
+                            <h4>Timely Delivery</h4>
+                            <p>Strict adherence to project timelines and deliverables.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Form Section -->
+            <div class="project-form-wrapper animate-on-scroll slide-up">
+                <div class="multi-neon-border">
+                    <form id="startProjectForm" class="project-form">
+                        <h3 class="form-heading">Project Details Form</h3>
+                        
+                        <!-- Personal Info -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" required placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="mobileNumber">WhatsApp Number *</label>
+                                <input type="tel" id="mobileNumber" required placeholder="Enter your mobile number">
+                            </div>
+                        </div>
+
+                        <!-- Plot Dimensions -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="plotLength">Plot Length (in feet) *</label>
+                                <input type="number" id="plotLength" required placeholder="e.g. 50">
+                            </div>
+                            <div class="form-group">
+                                <label for="plotWidth">Plot Width (in feet) *</label>
+                                <input type="number" id="plotWidth" required placeholder="e.g. 30">
+                            </div>
+                        </div>
+
+                        <h4 class="sub-heading">Surrounding Information</h4>
+                        
+                        <!-- Surroundings -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="surroundEast">East Side</label>
+                                <select id="surroundEast">
+                                    <option value="Neighbor House">Neighbor House</option>
+                                    <option value="Own Land">Own Land</option>
+                                    <option value="Road">Road</option>
+                                    <option value="Empty Plot">Empty Plot</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="surroundWest">West Side</label>
+                                <select id="surroundWest">
+                                    <option value="Neighbor House">Neighbor House</option>
+                                    <option value="Own Land">Own Land</option>
+                                    <option value="Road">Road</option>
+                                    <option value="Empty Plot">Empty Plot</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="surroundNorth">North Side</label>
+                                <select id="surroundNorth">
+                                    <option value="Neighbor House">Neighbor House</option>
+                                    <option value="Own Land">Own Land</option>
+                                    <option value="Road">Road</option>
+                                    <option value="Empty Plot">Empty Plot</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="surroundSouth">South Side</label>
+                                <select id="surroundSouth">
+                                    <option value="Neighbor House">Neighbor House</option>
+                                    <option value="Own Land">Own Land</option>
+                                    <option value="Road">Road</option>
+                                    <option value="Empty Plot">Empty Plot</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <h4 class="sub-heading">Front & Road Details</h4>
+
+                        <!-- Front and Road -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="houseFront">House Front Direction *</label>
+                                <select id="houseFront" required>
+                                    <option value="" disabled selected>Select Direction</option>
+                                    <option value="East">East</option>
+                                    <option value="West">West</option>
+                                    <option value="North">North</option>
+                                    <option value="South">South</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="roadType">Road Type in Front *</label>
+                                <select id="roadType" required>
+                                    <option value="" disabled selected>Select Road Type</option>
+                                    <option value="Pakka Road (Asphalt/Concrete)">Pakka Road (Asphalt/Concrete)</option>
+                                    <option value="Kacha Road (Dirt/Gravel)">Kacha Road (Dirt/Gravel)</option>
+                                    <option value="No Road">No Road</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="form-group">
+                            <label for="customMessage">Additional Requirements / Message</label>
+                            <textarea id="customMessage" rows="4" placeholder="Any specific requirements for your house (e.g. 3 BHK, Garden, Garage, etc.)"></textarea>
+                            <span class="form-hint"><i class="fa-solid fa-paperclip"></i> Note: You can attach your rough plot sketches or reference photos directly in the WhatsApp chat after clicking send.</span>
+                        </div>
+
+                        <!-- Consent Checkbox -->
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consentCheck" required>
+                            <label for="consentCheck">I agree to be contacted via WhatsApp regarding my project details and requirements. Your data is 100% secure.</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit neon-hover" id="submitBtn">
+                            <i class="fa-brands fa-whatsapp btn-icon"></i> 
+                            <span class="btn-text">SEND DETAILS ON WHATSAPP</span>
+                            <i class="fa-solid fa-circle-notch fa-spin loader-icon" style="display: none;"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- How it Works Section -->
+        <div class="container how-it-works-container animate-on-scroll slide-up">
+            <h3 class="hiw-title">WHAT HAPPENS NEXT?</h3>
+            <div class="hiw-steps">
+                <div class="hiw-step">
+                    <div class="step-number">1</div>
+                    <h4>Share Details</h4>
+                    <p>You submit your land dimensions and requirements securely.</p>
+                </div>
+                <div class="hiw-step">
+                    <div class="step-number">2</div>
+                    <h4>Expert Review</h4>
+                    <p>Our lead architects analyze your plot's potential and Vastu.</p>
+                </div>
+                <div class="hiw-step">
+                    <div class="step-number">3</div>
+                    <h4>Consultation</h4>
+                    <p>We connect with you on WhatsApp for a free design consultation.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 3D Home Designer. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="form-handler.js"></script>
+</body>
+</html>
